@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+counter = "9m5JMJKcnwUymts3cCgqM3eLNTPn2W2WLALRujpXw3Px"
+
+[programs.devnet]
+counter = "9m5JMJKcnwUymts3cCgqM3eLNTPn2W2WLALRujpXw3Px"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/xpsolitesol/PsoZSQhHg7USeEx8qQLKNhjXARH1XBUj8iGDNp5Y22V.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
